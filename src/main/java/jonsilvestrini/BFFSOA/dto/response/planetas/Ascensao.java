@@ -7,6 +7,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -21,6 +22,7 @@ import lombok.Setter;
 @Generated("jsonschema2pojo")
 @Getter
 @Setter
+@Builder
 public class Ascensao {
 
     @JsonProperty("negativo")
@@ -31,7 +33,5 @@ public class Ascensao {
     public Integer minutos;
     @JsonProperty("segundos")
     public Double segundos;
-    @JsonProperty("raw")
-    public Double raw;
 
 }

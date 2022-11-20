@@ -9,7 +9,8 @@ import jonsilvestrini.BFFSOA.exception.NotFoundException;
 
 public class Controller {
 
-	protected ResponseEntity<ErrorDTO> errorHandle(Exception e) {
+	protected ResponseEntity<ErrorDTO> errorHandler(Exception e) {
+		e.printStackTrace();
 		if (e instanceof NotFoundException) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ErrorDTO.builder()
 					.code(HttpStatus.NOT_FOUND.value())
