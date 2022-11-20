@@ -11,7 +11,7 @@ import lombok.Setter;
 @Builder
 public class ImagemAleatoriaDTO {
     @JsonProperty("titulo")
-    private String Titulo;
+    private String titulo;
 
     @JsonProperty("explicacao")
     private String explicacao;
